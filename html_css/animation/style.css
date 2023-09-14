@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: rotateAndChangeColor 5s linear infinite;
+}
+
+@keyframes rotateAndChangeColor {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        background-color: red;
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+        background-color: orange;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        background-color: green;
+    }
+}
